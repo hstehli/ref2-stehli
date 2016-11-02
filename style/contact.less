@@ -1,0 +1,72 @@
+.content-contact{
+    padding-left: 2%;
+}
+form{
+    width:600px;
+}
+fieldset{
+    //border:1px solid black;
+    margin-bottom: 1.8em;
+}
+textarea
+{
+   font-family: 'Noto Sans', sans-serif;
+}
+.choix-modele{
+    display:none;
+    width:100%;
+    margin-bottom: 1.4em;
+}
+
+
+/*style du formulaire*/
+legend{
+    display:block;
+    color:green;
+    font-size: 1.2em;
+}
+label{
+    line-height: 2.2em;
+}
+input, textarea{
+    width:100%;
+    border:1px solid #cecaca;
+    border-radius:3px;
+    padding-left: 1em;
+}
+input{
+    height:2.5em;
+}
+input[name="envoyer"], input[name="reset"]{
+    color:green;
+    background:rgba(0, 0, 0, 0);
+    border:1px solid green;
+    border-radius:2px;
+    padding: .5em 1.6em .5em 1.6em;
+    width:auto;
+    margin-bottom: 1.4em;
+    &:hover{
+        background:green;
+        color:white;
+        cursor:pointer;
+    }
+}
+input[name="reset"]{
+    color:green;
+    background:rgba(0, 0, 0, 0);
+    border:1px solid green;
+    border-radius:2px;
+    padding: .5em 1.6em .5em 1.6em;
+    width:auto;
+    margin-bottom: 1.4em;
+    &:hover{
+        background:green;
+        color:white;
+        cursor:pointer;
+    }
+}
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+    width:initial !important;
+    height: initial !important;
+}

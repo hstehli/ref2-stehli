@@ -5,6 +5,7 @@
 	  <title>Hugo Stehli</title>
 	  <link rel="stylesheet" href="style/reset.css">
 	  <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/modele.css">
 		<link rel="stylesheet" href="fluidable/fluidable.css">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet"> <!-- Google font-->
 
@@ -21,9 +22,7 @@
 	</head>
 
 	<body>
-		<a href="#presentation" class="skip">Présentation citroën Zx</a>
-        <a href="#zx16v" class="skip">Zx 16v</a>
-        <a href="#zxvolcane" class="skip">Zx volcane gti</a>
+		<a href="#tableau" class="skip">Tableau des caractéristiques</a>
         <a href="#footer" class="skip">Bas de page</a>
 		<header>
             <div class="header-wrap">
@@ -37,14 +36,9 @@
                             <a href="?movie">Modèles</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group clearfix">
-                                    <li><a href="modele-zx-16v.html">Citroën Zx 16V</a></li>
+                                    <li><a href="#">Citroën Zx 16V</a></li>
 																		<li><a href="?movie&genre=0">Citroën Zx Vulcane</a></li>
-                                    <!--<li><a href="?movie&genre=2">Lien</a></li>
-                                    <li>&#8230;</li>-->
                                 </ul>
-                                <!--<ul class="sub-nav-group">
-                                    <li><a href="?movie&genre=7">Citoën Zx Vulcane</a></li>
-                                </ul>-->
                             </div>
                         </li>
                         <li class="nav-item">
@@ -56,46 +50,82 @@
 		</header>
 
 		<main role="main">
-			<aside class="content-1">
-				<h1 class="p-left" id="presentation">Citorën Zx : une voiture d'exception</h1>
-                <div id="owl-demo" class="owl-carousel owl-theme">
-                  <div class="item"><img src="img/slide-1.png" alt="The Last of us"></div>
-                  <div class="item"><img src="img/slide-2.png" alt="GTA V"></div>
-                  <div class="item"><img src="img/slide-3.png" alt="Mirror Edge"></div>
-                </div>
-                <div class="specs clearfix">
-                    <span class="specs-1">
-                      Années de production <span class="bold">1991-1997</span>
-                    </span>
-                    <span class="specs-2">
-                      4 modèles phares<br>
-                    </span>
-                    <span class="specs-3">
-                      Puissance max <span class="chevaux">167 chevaux</span><!-- zx 16v 167chv  -->
-                    </span>
-                    <span class="specs-4">
-                      3 et 5 portes
-                    </span>
-                </div>
-				<div class="content-1-block p-left">
-					<div class="left">
-						<img src="img/zx-r-opti.jpg" alt="img"/>
-					</div>
-					<div class="right" id="zx16v">
-						<h2>Citroën Zx 16v</h2>
-						<p>Lorem Elsass ipsum so dolor non quam, nüdle nullam hopla Morbi geht's météor Hans hopla amet eget auctor, ch'ai Salut bisamme bissame gal kuglopf sed pellentesque yeuh. leo ac Wurschtsalad messti de Bischheim Pfourtz ! adipiscing hopla aliquam rucksack Yo dû. mänele knack Chulia Roberstau Oberschaeffolsheim ac jetz gehts los habitant blottkopf, placerat Miss Dahlias et DNA, in, porta amet, id commodo Gal ! leo Verdammi hopla baeckeoffe gewurztraminer und Coopé de Truchtersheim</p>
-						<a href="" class="bouton">Découvrir</a>
-					</div>
+			<aside class="content-modele">
+				<h1 class="p-left">Citorën Zx 16v : Plus qu'une voiture de sport</h1>
+				<div class="content-modele_image">
+					<img src="img/slide-1.png" alt="">
+					<!--<span class="nom">16v</span>-->
 				</div>
-				<div class="content-2-block p-left">
-					<div class="right" id="zxvolcane">
-						<h2>Citroën Zx Volcane</h2>
-						<p>Lorem Elsass ipsum so dolor non quam, nüdle nullam hopla Morbi geht's météor Hans hopla amet eget auctor, ch'ai Salut bisamme bissame gal kuglopf sed pellentesque yeuh. leo ac Wurschtsalad messti de Bischheim Pfourtz ! adipiscing hopla aliquam rucksack Yo dû. mänele knack Chulia Roberstau Oberschaeffolsheim ac jetz gehts los habitant blottkopf, placerat Miss Dahlias et DNA, in, porta amet, id commodo Gal ! leo Verdammi hopla baeckeoffe gewurztraminer und Coopé de Truchtersheim</p>
-						<a href="" class="bouton">Découvrir</a>
-					</div>
-					<div class="left">
-						<img src="img/zx-vulcane.jpg" alt="img"/>
-					</div>
+				<div class="content-modele_description">
+					<h2>Toujours un temps d'avance</h2>
+					La Citroën ZX complète une offre plus « grand public » avec l’AX dans le catalogue de la firme aux chevrons. Avec un style au départ très consensuel, la version 3 portes apporte un esprit « coupé ». Et pour novembre 1992, la ZX adopte le moteur de la Peugeot 405 MI16 catalysé. La Citroën ZX 16V reçoit des boucliers peints ton caisse, des extensions d’ailes, un becquet et des jantes 15″. La Citroën ZX 16V se pose ainsi en fer de lance de la gamme à l’assaut des GTI.
+				</div>
+				<div class="content-modele_caracteristiques">
+					<h2>Caractéristiques</h2>
+					<!-- Debut mega tableau -->
+					<table id="tableau">
+							<thead>
+									<tr>
+										<th id="moteur" colspan="4">Moteur</th>
+										<th id="transmission" colspan="2">Transmission</th>
+										<th id="consommation" rowspan="2">Consommation</th>
+									</tr>
+									<tr>
+										<th id="moteur nombre cylindres">Nombre de cylindres</th>
+										<th id="moteur cylindrée">Cylindrée</th>
+										<th id="moteur puissance fiscale">Puissance fiscale</th>
+										<th id="moteur puissance">Puissance</th>
+										<th id="transmission type">Type de Transmission</th>
+										<th id="transmission nombre rapports">Nombre de rapports</th>
+									</tr>
+							</thead>
+							<tbody>
+									<tr>
+											<td headers="zx 16v moteur nombre cylindres" >4</td>
+											<td headers="zx 16v moteur cylindrée">1998 cm3</td>
+											<td headers="zx 16v moteur puissance fiscale">11cv</td>
+											<td headers="zx 16v moteur puissance">167ch</td>
+											<td headers="zx 16v transmission type">Traction</td>
+											<td headers="zx 16v transmission nombre rapports">5</td>
+											<td headers="zx 16v consommation">8.6L/100</td>
+									</tr>
+							</tbody>
+							<tfoot>
+							</tfoot>
+					</table>
+                    <table class="hidden">
+                        <thead>
+                            <tr><th id="moteur" colspan="4">Moteur</th></tr>
+                            <tr>
+                                <th id="moteur nombre cylindres">Nombre de cylindres</th>
+                                <th id="moteur cylindrée">Cylindrée</th>
+                                <th id="moteur puissance fiscale">Puissance fiscale</th>
+                                <th id="moteur puissance">Puissance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <td headers="zx 16v moteur nombre cylindres" >4</td>
+                            <td headers="zx 16v moteur cylindrée">1998 cm3</td>
+                            <td headers="zx 16v moteur puissance fiscale">11cv</td>
+                            <td headers="zx 16v moteur puissance">167ch</td>
+                        </tbody>
+                    </table>
+                    <table class="hidden">
+                        <thead>
+                            <th id="transmission" colspan="2">Transmission</th>
+                            <tr>
+                                <th id="transmission type">Type de Transmission</th>
+								<th id="transmission nombre rapports">Nombre de rapports</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <td headers="zx 16v transmission type">Traction</td>
+				            <td headers="zx 16v transmission nombre rapports">5</td>
+                        </tbody>
+                    </table>
+				</div>
+				<div class="content-modele_galerie">
+					<h2>Galerie</h2>
 				</div>
 			</aside>
 		</main>
@@ -164,7 +194,6 @@
               navigation : true, // Show next and prev buttons
               slideSpeed : 300,
               paginationSpeed : 400,
-			  autoWidth:true,
               singleItem:true
 
               // "singleItem:true" is a shortcut for:

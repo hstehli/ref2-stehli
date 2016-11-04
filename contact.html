@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 	<head>
 	  <meta charset="utf-8">
@@ -22,43 +23,54 @@
 	</head>
 
 	<body>
-		<a href="#tableau" class="skip">Tableau des caractéristiques</a>
+		<a href="#form" class="skip">Accéder au formulaire</a>
         <a href="#footer" class="skip">Bas de page</a>
-		<header>
+		<header role="banner">
             <div class="header-wrap">
-                <a href="index.html"><div class="logo"><span>Citorën</span> Zx</div></a>
-                <nav>
+                <a href="index.html" title="retour à l'accueil" role="link"><div class="logo"><span>Citroën</span> Zx</div></a>
+                <nav  role="navigation" class="navigation1">
                     <ul class="nav-menu">
                         <li class="nav-item">
-                            <a href="index.html">Accueil</a>
+                            <a href="index.html" title="retour à l'accueil" role="link">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a href=#>Modèles</a>
+                            <a href="" title="tous les modèles" role="link">Modèles</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group clearfix">
-                                    <li><a href="modele-zx-16v.html">Citroën Zx 16V</a></li>
-																		<li><a href="?movie&genre=0">Citroën Zx Vulcane</a></li>
-                                    <!--<li><a href="?movie&genre=2">Lien</a></li>
-                                    <li>&#8230;</li>-->
+                                    <li><a href="modele-zx-16v.html" title="informations sur la citroën Zx 16V" role="link">Citroën Zx 16V</a></li>
+								    <li><a href="" title="informations sur la citroën Zx Vulcane" role="link">Citroën Zx Vulcane</a></li>
                                 </ul>
-                                <!--<ul class="sub-nav-group">
-                                    <li><a href="?movie&genre=7">Citoën Zx Vulcane</a></li>
-                                </ul>-->
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html">Contact</a>
+                            <a href="contact.html" title="nous contacter" role="link">Contact</a>
                         </li>
                     </ul>
                 </nav>
+                <span class="burger-menu">
+                    <img src="img/menu.svg" alt="menu burger">
+                </span>
             </div>
 		</header>
+		<div class="responsive-menu">
+				<ul>
+						<li><a href="index.html" title="retour à l'accueil" role="link">Accueil</a></li>
+						<li class="hasdropdown">
+								Modèles
+								<ul class="dropdown">
+										<li><a href="modele-zx-16v.html" title="informations sur la citroën Zx 16V" role="link">Citroën Zx 16V</a></li>
+										<li><a href="#" title="informations sur la citroën Zx Vulcane" role="link">Citroën Zx Vulcane</a></li>
+								</ul>
+						</li>
+						<li><a href="contact.html" title="nous contacter" role="link">Contact</a></li>
+				</ul>
+		</div>
 
 		<main role="main">
 			<aside class="content-contact">
                 <h1>Contactez-nous !</h1>
                 <!-- Debut mega tableau -->
-				<form method="post" action="traitement.php">
+				<form method="post" action="traitement.php" id="form">
                     <!--Sexe-->
                     <fieldset>
                         <legend>Identité</legend>
@@ -67,11 +79,11 @@
                         <input id="feminin" type="radio" name="genre">
                         <label for="feminin">Femme</label>
                         <label id="nom">Nom</label>
-                        <input for="nom" type="text" required="required">
+                        <input for="nom" type="text" required="required" aria-required="true">
                         <label id="prenom">Prénom</label>
-                        <input for="prenom" type="text" required="required">
+                        <input for="prenom" type="text" required="required" aria-required="true">
                         <label id="code-postal">Adresse mail</label>
-                        <input for="code-postal" type="email" required="required">
+                        <input for="code-postal" type="email" required="required" aria-required="true">
                     </fieldset>
                     <fieldset>
                         <legend>Adresse</legend>
@@ -85,7 +97,7 @@
                     <fieldset>
                         <legend>Laissez-nous un message</legend>
                         <label for="message">Votre message</label>
-                        <textarea name="message" id="message" rows="10" cols="50" required="required"></textarea>
+                        <textarea name="message" id="message" rows="10" cols="50" required="required" aria-required="true" accesskey="m"></textarea>
                         Possédez-vous une citroën Zx?
                         <input id="zx-oui" type="radio" name="zx">
                         <label for="zx-oui">Oui</label>
@@ -105,9 +117,9 @@
 			</aside>
 		</main>
 
-		<footer id="footer">
+		<footer id="footer" role="contentinfo">
 			<div class="footer_block">
-                Footer
+                <a href="charte.html">Charte d'accessibilité</a>
             </div>
 		</footer>
 
@@ -164,21 +176,9 @@
             openClass: "open"
         });
 
-           $("#owl-demo").owlCarousel({
-
-              navigation : true, // Show next and prev buttons
-              slideSpeed : 300,
-              paginationSpeed : 400,
-              singleItem:true
-
-              // "singleItem:true" is a shortcut for:
-              // items : 1,
-              // itemsDesktop : false,
-              // itemsDesktopSmall : false,
-              // itemsTablet: false,
-              // itemsMobile : false
-
-            });
+						$('.burger-menu').on( "click", function() {
+							 $('.responsive-menu').toggle(500);
+						});
     </script>
 
 	</body>

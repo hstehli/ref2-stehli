@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="fr">
 	<head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	  <title>Hugo Stehli</title>
+	  <title>Citroën Zx - Hugo Stehli</title>
 	  <link rel="stylesheet" href="style/reset.css">
 	  <link rel="stylesheet" href="style/style.css">
 		<link rel="stylesheet" href="fluidable/fluidable.css">
@@ -21,47 +22,63 @@
 	</head>
 
 	<body>
+        <a href="#recherche" class="skip">Recherche sur le site</a>
 		<a href="#presentation" class="skip">Présentation citroën Zx</a>
-        <a href="#zx16v" class="skip">Zx 16v</a>
-        <a href="#zxvolcane" class="skip">Zx volcane gti</a>
+        <a href="#zx16v" class="skip">Citroën Zx 16v</a>
+        <a href="#zxvolcane" class="skip" >Citroën Zx Vulcane Gti</a>
         <a href="#footer" class="skip">Bas de page</a>
-		<header>
+		<header role="banner">
             <div class="header-wrap">
-                <a href="index.html"><div class="logo"><span>Citorën</span> Zx</div></a>
-                <nav>
+                <a href="index.html" title="retour à l'accueil" role="link"><div class="logo"><span>Citroën</span> Zx</div></a>
+                <nav  role="navigation" class="navigation1">
                     <ul class="nav-menu">
                         <li class="nav-item">
-                            <a href="index.html">Accueil</a>
+                            <a href="index.html" title="retour à l'accueil" role="link">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a href="?movie">Modèles</a>
+                            <a href="" title="tous les modèles" role="link">Modèles</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group clearfix">
-                                    <li><a href="modele-zx-16v.html">Citroën Zx 16V</a></li>
-																		<li><a href="?movie&genre=0">Citroën Zx Vulcane</a></li>
-                                    <!--<li><a href="?movie&genre=2">Lien</a></li>
-                                    <li>&#8230;</li>-->
+                                    <li><a href="modele-zx-16v.html" title="informations sur la citroën Zx 16V" role="link">Citroën Zx 16V</a></li>
+								    <li><a href="" title="informations sur la citroën Zx Vulcane" role="link">Citroën Zx Vulcane</a></li>
                                 </ul>
-                                <!--<ul class="sub-nav-group">
-                                    <li><a href="?movie&genre=7">Citoën Zx Vulcane</a></li>
-                                </ul>-->
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html">Contact</a>
+                            <a href="contact.html" title="nous contacter" role="link">Contact</a>
                         </li>
                     </ul>
                 </nav>
+                <span class="burger-menu">
+                    <img src="img/menu.svg" alt="menu burger">
+                </span>
             </div>
 		</header>
+		<div class="responsive-menu">
+				<ul>
+						<li><a href="index.html" title="retour à l'accueil" role="link">Accueil</a></li>
+						<li class="hasdropdown">
+								Modèles
+								<ul class="dropdown">
+										<li><a href="modele-zx-16v.html" title="informations sur la citroën Zx 16V" role="link">Citroën Zx 16V</a></li>
+										<li><a href="#" title="informations sur la citroën Zx Vulcane" role="link">Citroën Zx Vulcane</a></li>
+								</ul>
+						</li>
+						<li><a href="contact.html" title="nous contacter" role="link">Contact</a></li>
+				</ul>
+		</div>
 
 		<main role="main">
 			<aside class="content-1">
-				<h1 class="p-left" id="presentation">Citorën Zx : une voiture d'exception</h1>
-                <div id="owl-demo" class="owl-carousel owl-theme">
-                  <div class="item"><img src="img/slide-1.png" alt="The Last of us"></div>
-                  <div class="item"><img src="img/slide-2.png" alt="GTA V"></div>
-                  <div class="item"><img src="img/slide-3.png" alt="Mirror Edge"></div>
+                <form role="search" class="searchform" id="recherche">
+                    <input type="search" placeholder="Rechercher sur le site" name="the_search" class="searchbar">
+                    <button type="submit" class="searchsubmit">Rechercher</button>
+                </form>
+				<h1 class="p-left" id="presentation">Citroën Zx : une voiture d'exception</h1>
+                <div id="owl-demo" class="owl-carousel owl-theme" role="slider">
+                  <div class="item"><img src="img/slide-1.png" alt="citroën Zx 16V"></div>
+                  <div class="item"><img src="img/slide-2.png" alt="citroën Zx 16V"></div>
+                  <div class="item"><img src="img/slide-3.png" alt="citroën Zx Vulcane Gti"></div>
                 </div>
                 <div class="specs clearfix">
                     <span class="specs-1">
@@ -79,30 +96,30 @@
                 </div>
 				<div class="content-1-block p-left">
 					<div class="left">
-						<img src="img/zx-r-opti.jpg" alt="img"/>
+						<img src="img/zx-r-opti.jpg" alt="citroën Zx 16v couleur" role="img"/>
 					</div>
 					<div class="right" id="zx16v">
 						<h2>Citroën Zx 16v</h2>
-						<p>Lorem Elsass ipsum so dolor non quam, nüdle nullam hopla Morbi geht's météor Hans hopla amet eget auctor, ch'ai Salut bisamme bissame gal kuglopf sed pellentesque yeuh. leo ac Wurschtsalad messti de Bischheim Pfourtz ! adipiscing hopla aliquam rucksack Yo dû. mänele knack Chulia Roberstau Oberschaeffolsheim ac jetz gehts los habitant blottkopf, placerat Miss Dahlias et DNA, in, porta amet, id commodo Gal ! leo Verdammi hopla baeckeoffe gewurztraminer und Coopé de Truchtersheim</p>
-						<a href="" class="bouton">Découvrir</a>
+						<p role="article">Lorem Elsass ipsum so dolor non quam, nüdle nullam hopla Morbi geht's météor Hans hopla amet eget auctor, ch'ai Salut bisamme bissame gal kuglopf sed pellentesque yeuh. leo ac Wurschtsalad messti de Bischheim Pfourtz ! adipiscing hopla aliquam rucksack Yo dû. mänele knack Chulia Roberstau Oberschaeffolsheim ac jetz gehts los habitant blottkopf, placerat Miss Dahlias et DNA, in, porta amet, id commodo Gal ! leo Verdammi hopla baeckeoffe gewurztraminer und Coopé de Truchtersheim</p>
+						<a href="" class="bouton" title="plus d'informations sur la citroën Zx 16V" role="link">Découvrir</a>
 					</div>
 				</div>
 				<div class="content-2-block p-left">
 					<div class="right" id="zxvolcane">
 						<h2>Citroën Zx Volcane</h2>
-						<p>Lorem Elsass ipsum so dolor non quam, nüdle nullam hopla Morbi geht's météor Hans hopla amet eget auctor, ch'ai Salut bisamme bissame gal kuglopf sed pellentesque yeuh. leo ac Wurschtsalad messti de Bischheim Pfourtz ! adipiscing hopla aliquam rucksack Yo dû. mänele knack Chulia Roberstau Oberschaeffolsheim ac jetz gehts los habitant blottkopf, placerat Miss Dahlias et DNA, in, porta amet, id commodo Gal ! leo Verdammi hopla baeckeoffe gewurztraminer und Coopé de Truchtersheim</p>
-						<a href="" class="bouton">Découvrir</a>
+						<p role="article">Lorem Elsass ipsum so dolor non quam, nüdle nullam hopla Morbi geht's météor Hans hopla amet eget auctor, ch'ai Salut bisamme bissame gal kuglopf sed pellentesque yeuh. leo ac Wurschtsalad messti de Bischheim Pfourtz ! adipiscing hopla aliquam rucksack Yo dû. mänele knack Chulia Roberstau Oberschaeffolsheim ac jetz gehts los habitant blottkopf, placerat Miss Dahlias et DNA, in, porta amet, id commodo Gal ! leo Verdammi hopla baeckeoffe gewurztraminer und Coopé de Truchtersheim</p>
+						<a href="" class="bouton" title="plus d'informations sur la citroën Zx Vulcane Gti" role="link">Découvrir</a>
 					</div>
 					<div class="left">
-						<img src="img/zx-vulcane.jpg" alt="img"/>
+						<img src="img/zx-vulcane.jpg" alt="citorën Zx Vulcane Gti" role="img"/>
 					</div>
 				</div>
 			</aside>
 		</main>
 
-		<footer id="footer">
+		<footer id="footer" role="contentinfo">
 			<div class="footer_block">
-                Footer
+                <a href="charte.html">Charte d'accessibilité</a>
             </div>
 		</footer>
 
@@ -174,6 +191,10 @@
               // itemsTablet: false,
               // itemsMobile : false
 
+            });
+
+            $('.burger-menu').on( "click", function() {
+                 $('.responsive-menu').toggle(500);
             });
     </script>
 

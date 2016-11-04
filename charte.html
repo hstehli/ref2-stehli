@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html lang="fr">
 	<head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	  <title>Hugo Stehli</title>
+	  <title>Charte d'accessibilité</title>
 	  <link rel="stylesheet" href="style/reset.css">
 	  <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/tableau.css">
+        <link rel="stylesheet" href="style/modele.css">
 		<link rel="stylesheet" href="fluidable/fluidable.css">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet"> <!-- Google font-->
 
@@ -24,80 +25,60 @@
 	<body>
 		<a href="#tableau" class="skip">Tableau des caractéristiques</a>
         <a href="#footer" class="skip">Bas de page</a>
-		<header>
+		<header role="banner">
             <div class="header-wrap">
-                <div class="logo"><span>Citorën</span> Zx</div>
-                <nav>
+                <a href="index.html"><div class="logo"><span>Citorën</span> Zx</div></a>
+                <nav role="navigation" class="navigation1">
                     <ul class="nav-menu">
                         <li class="nav-item">
                             <a href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a href="?movie">Modèles</a>
+                            <a href="">Modèles</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group clearfix">
-                                    <li><a href="?movie&genre=0">Citoën Zx Prestige</a></li>
-																		<li><a href="?movie&genre=0">Citoën Zx Vulcane</a></li>
-                                    <!--<li><a href="?movie&genre=2">Lien</a></li>
-                                    <li>&#8230;</li>-->
+                                    <li><a href="#">Citroën Zx 16V</a></li>
+				                    <li><a href="">Citroën Zx Vulcane</a></li>
                                 </ul>
-                                <!--<ul class="sub-nav-group">
-                                    <li><a href="?movie&genre=7">Citoën Zx Vulcane</a></li>
-                                </ul>-->
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="tableau.html">Tableau</a>
                         </li>
                         <li class="nav-item">
                             <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>
+								<span class="burger-menu">
+                    <img src="img/menu.svg">
+                </span>
             </div>
 		</header>
+		<div class="responsive-menu">
+				<ul>
+						<li>Accueil</li>
+						<li>
+								Modèles
+								<ul>
+										<li>Citroën Zx 16V</li>
+										<li>Citroën Zx Vulcane</li>
+								</ul>
+						</li>
+				</ul>
+		</div>
 
 		<main role="main">
-			<aside class="content-tableau">
-				<h1 class="p-left">Caractéristiques</h1>
-                <!-- Debut mega tableau -->
-                <table id="tableau">
-                    <thead>
-                        <tr>
-                            <th id="modele">Modèles</th>
-                            <th id="annee">Année de production</th>
-                            <th id="chevaux fiscaux">Chv fiscaux</th>
-                            <th id="recompense">Récompense</th>
-                            <th id="cylindres">Cylindres</th>
-                            <th id="portes">Portes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th id="zx rallye raid">Zx rallye raid</th>
-                            <td headers="zx rallye raid annee" >1990</td>
-                            <td headers="zx rallye raid chevaux fiscaux">300</td>
-                            <td headers="zx rallye raid recompense">-</td>
-                            <td headers="zx rallye raid cylindres">-</td>
-                            <td headers="zx rallye raid portes">5</td>
-                        </tr>
-                        <tr>
-                            <th >Zx rallye raid</th>
-                            <td>1990</td>
-                            <td>300</td>
-                            <td>-</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        
-                    </tfoot>
-                </table>
+			<aside class="content-modele">
+				<h1 class="p-left">Citroën Zx.com s'engage</h1>
+                "Mettre le Web et ses services à la disposition de tous les individus, quel que soit leur matériel ou logiciel, leur infrastructure réseau, leur langue maternelle, leur culture, leur localisation géographique, ou leurs aptitudes physiques ou mentales". (Extrait de la définition de l’accessibilité adoptée par le World Wide Web Consortium)
+
+                Citroën Zx.com, s’inscrit dans la démarche adoptée par le groupe La Poste sur l’accessibilité aux handicapés visant à optimiser l’accès à l’information et à améliorer la qualité des services existants et à venir.
+
+                Les principaux acteurs impliqués dans la mise en œuvre de l’accessibilité dont l’association BrailleNet et le W3C ont contribué à l’élaboration d’un référentiel d’accessibilité publié par DGME, Direction Générale de la Modernisation de l’Etat, au sein du ministère de l’Economie, des Finances et de l’Industrie. Le portail du groupe La Poste a été développé pour répondre aux critères "Argent" (niveau équivalent au niveau AA de W3C/WAI ) du référentiel de la DGME.
 			</aside>
 		</main>
 
-		<footer id="footer">
+		<footer id="footer" role="contentinfo">
 			<div class="footer_block">
-                Footer
+                <a href="charte.html">Charte d'accessibilité</a>
             </div>
 		</footer>
 
@@ -154,21 +135,10 @@
             openClass: "open"
         });
 
-           $("#owl-demo").owlCarousel({
-
-              navigation : true, // Show next and prev buttons
-              slideSpeed : 300,
-              paginationSpeed : 400,
-              singleItem:true
-
-              // "singleItem:true" is a shortcut for:
-              // items : 1,
-              // itemsDesktop : false,
-              // itemsDesktopSmall : false,
-              // itemsTablet: false,
-              // itemsMobile : false
-
-            });
+				$('.burger-menu').on( "click", function() {
+					 $('.responsive-menu').toggle(500);
+					 console.log('coucou');
+				});
     </script>
 
 	</body>

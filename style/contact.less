@@ -1,5 +1,6 @@
 .content-contact{
     padding-left: 2%;
+    padding-right: 2%;
 }
 form{
     width:600px;
@@ -69,4 +70,20 @@ input[name="reset"]{
 [type="radio"]:checked {
     width:initial !important;
     height: initial !important;
+}
+
+@media screen and (max-width: 1000px) {
+  main{
+    width:100% !important;
+  }
+}
+@media screen and (max-width: 630px) {
+  main{
+    .content-contact{
+      width:100% !important;
+        form{
+            width:100% !important;
+        }
+    }
+  }
 }
